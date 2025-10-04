@@ -73,3 +73,27 @@ bool isPrime(int n){
 int main(){
     cout<<isPrime(3);
 }
+
+
+
+//Binomial Coefficient
+int fact(int n){
+    int f=1;
+for(int i=1;i<=n;i++){
+   f*=i;
+}
+return f;
+}
+
+int bc(int n,int r){
+    int val1= fact(n);
+int val2= fact(r);
+int val3= fact(n-r);
+int result= val1/(val2*val3);
+return result;
+}
+
+int main(){
+cout<<bc(5,5);
+}
+
