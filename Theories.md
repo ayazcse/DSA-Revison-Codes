@@ -14,3 +14,6 @@ Recursion me har call ek naya frame banata hai, aur base case aane ke baad sab f
 
 
 
+Global Variable: Function ke bahar banaya jaata hai → sab jagah access hota hai.
+
+Local Variable: Function ke andar banaya jaata hai → sirf usi function me kaam karta hai.
