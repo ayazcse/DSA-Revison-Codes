@@ -140,3 +140,30 @@ int main(){
    cout<< sumOfNum(number);
 }
 
+
+
+//example
+int paramters(int a, int b){
+    int sum= (a*a)+(b*b)+(2*a*b);
+    return sum;
+}
+int main(){
+    int a,b;
+    cin>>a;
+    cin>>b;
+    cout<<paramters(a,b);
+}
+
+
+
+//example 2
+char interchange(char ch){
+    if(ch=='Z') return 'A';
+    if(ch=='z') return 'a';
+    return ch+1;
+}
+int main(){
+   char ch;
+   cin>>ch;
+   cout<<interchange(ch);
+}
