@@ -17,3 +17,18 @@ Recursion me har call ek naya frame banata hai, aur base case aane ke baad sab f
 Global Variable: Function ke bahar banaya jaata hai → sab jagah access hota hai.
 
 Local Variable: Function ke andar banaya jaata hai → sirf usi function me kaam karta hai.
+
+
+
+
+💡 Short Notes Version
+
+Same function name, different parameters = function overloading.
+
+Parameters number ya type me different hone chahiye.
+
+Return type alag hone se alone overloading nahi hoti.
+
+Compiler call pe decide karta hai kaunsa function run hoga.
+
+Code readable aur flexible ho jaata hai.
