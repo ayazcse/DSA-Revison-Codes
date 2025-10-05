@@ -32,3 +32,11 @@ Return type alag hone se alone overloading nahi hoti.
 Compiler call pe decide karta hai kaunsa function run hoga.
 
 Code readable aur flexible ho jaata hai.
+
+
+a       → value
+&a      → address of a
+*p      → value at address stored in p
+&p      → address of pointer p
+**q     → value pointed by pointer to pointer
+
