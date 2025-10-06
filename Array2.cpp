@@ -68,3 +68,23 @@ int main(){
         int n=4;
         MaxSumSubArray(arr,4);
 }
+
+
+//Kadanes Algo
+#include<iostream>
+#include<climits>
+using namespace std;
+void KadanAlgoMaxSumSubArray(int *arr, int n){
+        int maxSum=INT_MIN;
+        int currSum=0;
+        for(int i=0;i<n;i++){
+                currSum+=arr[i];
+                maxSum=max(currSum,maxSum);
+        }
+        cout<<"Maximum Subarray : "<<maxSum<<endl;
+}
+ int main(){
+         int arr[]= {34,45,66,77};
+         int n=sizeof(arr)/sizeof(int);
+         KadanAlgoMaxSumSubArray(arr,4);
+ }
