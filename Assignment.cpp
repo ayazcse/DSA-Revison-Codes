@@ -69,3 +69,32 @@ int main(){
     else
         cout << "Target not found";
 }
+
+
+
+
+//Maximum Product Subarray – Super Easy Version
+#include<iostream>
+#include<climits>
+using namespace std;
+int maaxProduct( int *arr, int n){
+    int maxSoFar=arr[0];
+    int minSoFar=arr[0];
+    int result=arr[0];
+    
+    for(int i=1;i<n;i++){
+        if(arr[i]<0) swap(maxSoFar, minSoFar);
+        
+        maxSoFar= max(arr[i], arr[i]*maxSoFar);
+        minSoFar= min(arr[i],arr[i]*minSoFar);
+        result=max(result,maxSoFar);
+    }
+    return result;
+}
+
+int main(){
+    int arr[] = {1,2,-4,-2};
+    int n=4;
+    cout<<"Maximum Subarray : "<<maaxProduct(arr,n)<<endl;
+}
+
