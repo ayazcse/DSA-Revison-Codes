@@ -40,3 +40,5 @@ a       → value
 &p      → address of pointer p
 **q     → value pointed by pointer to pointer
 
+
+n size ke array ke liye itne sub array hote n*(n+1)/2
