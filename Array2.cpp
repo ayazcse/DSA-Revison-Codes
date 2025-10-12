@@ -96,26 +96,22 @@ void KadanAlgoMaxSumSubArray(int *arr, int n){
 #include <climits>
 using namespace std;
 
-void maxProfit(int *prices, int n) {
-    int bestBuy[100000];   // Har din ke liye best buy price ka record
-    bestBuy[0] = prices[0];
-
-    for(int i = 1; i < n; i++) {
-        bestBuy[i] = min(bestBuy[i-1], prices[i]);
-    }
-
+void MaximumProfit(int *prices, int n) {
+    int BestBuy = prices[0];   // best (lowest) price so far
     int maxProfit = 0;
-    for(int i = 0; i < n; i++) {
-        int currProfit = prices[i] - bestBuy[i];
-        maxProfit = max(maxProfit, currProfit);
+
+    for (int i = 1; i < n; i++) {
+        int currProfit = prices[i] - BestBuy;   // profit if sold today
+        maxProfit = max(maxProfit, currProfit); // update best profit
+        BestBuy = min(BestBuy, prices[i]);      // update best buy price
     }
 
-    cout << "Max Profit = " << maxProfit << endl;
+    cout << "Maximum Profit = " << maxProfit << endl;
 }
 
 int main() {
-    int prices[6] = {7, 1, 5, 3, 6, 4};
-    int n = sizeof(prices) / sizeof(int);
-    maxProfit(prices, n);
+    int prices[] = {2, 3, 4, 5, 6, 7, 8};
+    int n = sizeof(prices) / sizeof(prices[0]);
+    MaximumProfit(prices, n);
+    return 0;
 }
-
