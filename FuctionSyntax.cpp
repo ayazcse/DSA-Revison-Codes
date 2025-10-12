@@ -75,7 +75,7 @@ int main(){
 
 
 
-//Binomial Coefficient
+//Binomial Coefficient   BC= n!/r!*(n-r)!
 int fact(int n){
     int f=1;
 for(int i=1;i<=n;i++){
