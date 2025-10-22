@@ -171,3 +171,23 @@ int main() {
 
 //Descending order
 sort(arr,greater<>int())
+
+
+//Practice Ques
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    char ch[5]= { 'a','z','w','b'};
+    int n=5;
+   sort(ch,ch+5);
+   
+    // print sorted characters
+    for(int i = 0; i < n; i++) {
+        cout << ch[i] << " ";
+    }
+
+    return 0;
+}
