@@ -167,3 +167,7 @@ int main() {
         cout << arr[i] << " ";
     return 0;
 }
+
+
+//Descending order
+sort(arr,greater<>int())
