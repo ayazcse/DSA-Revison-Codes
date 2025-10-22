@@ -148,3 +148,22 @@ int main() {
         cout << arr[i] << " ";
     }
 }
+
+
+//I n Built Sort
+#include <iostream>
+#include <algorithm> // sort() yahan hota hai
+using namespace std;
+
+int main() {
+    int arr[] = {5, 2, 9, 1, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);  // total elements
+
+    // 🔹 In-built sort function
+    sort(arr, arr + n);
+
+    cout << "Sorted Array (Ascending): ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    return 0;
+}
