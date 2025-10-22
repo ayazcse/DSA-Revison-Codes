@@ -59,3 +59,32 @@ int main() {
     return 0;
 }
 
+
+
+//Insertion  Sort
+#include <iostream>
+using namespace std;
+
+void insertionSort(int arr[], int n) {
+    for(int i = 1; i < n; i++) {
+        int key = arr[i];      // jis element ko insert karna hai
+        int j = i - 1;
+        // peeche wale elements se compare karo
+        while(j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];  // bada element aage badhao
+            j--;
+        }
+        arr[j + 1] = key;  // sahi jagah pe insert karo
+    }
+}
+
+int main() {
+    int arr[] = {8, 3, 5, 2, 7};
+    int n = 5;
+    insertionSort(arr, n);
+
+    cout << "Sorted Array: ";
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+}
+
