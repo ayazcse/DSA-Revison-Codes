@@ -73,3 +73,38 @@ int main() {
 
     return 0;
 }
+
+
+
+//Diagonal Sum
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+void DiagonalSum(int mat[][4], int n){
+        int sum=0;
+        for(int i=0;i<n;i++){
+         sum+=mat[i][i];
+         if(i!=n-i-1){
+                 sum+=mat[i][n-i-1];
+        }
+        }
+        cout<<"Sum :"<<sum<<endl;
+}
+int main() {
+    int mat[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
+    };
+
+    DiagonalSum(mat, 4);
+    return 0;
+}
