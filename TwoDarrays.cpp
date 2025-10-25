@@ -77,13 +77,6 @@ int main() {
 
 
 //Diagonal Sum
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
 
 #include <iostream>
 using namespace std;
@@ -106,5 +99,38 @@ int main() {
     };
 
     DiagonalSum(mat, 4);
+    return 0;
+}
+
+
+//Search in Sored Matrix
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+void SearchKey(int mat[][4], int n , int m,int key){
+    int i=0;int j=m-1;
+    while(i<n && j>=0){
+        if(mat[i][j]==key){
+            cout<<"Found at cell ("<<i<<" , "<<j<<")";
+            return;
+        }
+        else if(mat[i][j]>key){
+            j--;
+            }
+        else{
+            i++;
+            }
+    }
+    cout<<"Key not found."<<endl;
+}
+
+int main (){
+    int mat[4][4]= {
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12},
+        {13,14,15,16}
+    };
+    SearchKey(mat,4,4,14);
     return 0;
 }
