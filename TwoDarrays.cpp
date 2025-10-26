@@ -1,1 +1,1 @@
-.
+Printthenumberofall7’sthatareinthe2darray.Example:Input-intarr[][]={{4,7,8},{8,8,7}};n=2,m=3Output-2Question2:Printoutthesumofthenumbersinthesecondrowofthe“nums”array.Example:Input-intnums[][]={{1,4,9},{11,4,3},{2,2,3}};Output-18Question3:WriteaprogramtoFindTransposeofaMatrix.WhatisTranspose?Transposeofamatrixistheprocessofswappingtherowstocolumns.Fora2x3matrix,Matrixa11a12a13a21a22a23TransposedMatrixa11a21a12a22a13a23ExtraQuestionsQuestion4:GotoQsQuestion5:GotoQsayazxalam@gmail.com
