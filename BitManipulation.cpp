@@ -44,3 +44,25 @@ int main()
     
     return 0;
 }
+
+
+
+
+//SetithBit
+// we will use OR as 0 | 1=1 a nd 1|1 =1 
+
+#include <iostream>
+using namespace std;
+
+int SetiThBit(int n, int i){
+    int bitmask = 1 << i;
+    return (n | bitmask);
+}
+
+int main()
+{
+    int result = SetiThBit(5, 3);
+    cout << result;
+    return 0;
+}
+
