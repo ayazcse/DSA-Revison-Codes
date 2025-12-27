@@ -66,3 +66,18 @@ int main()
     return 0;
 }
 
+//ODD or Even
+// bit of 16 & 15=0 -Even , n & n-1 =0 - even
+
+#include <iostream>
+using namespace std;
+
+bool PowerOfTwo(int n){
+        if(n & (n-1)==0){
+           return true;
+        }
+        return false;
+}
+int main(){
+        cout<<PowerOfTwo(50);
+}
